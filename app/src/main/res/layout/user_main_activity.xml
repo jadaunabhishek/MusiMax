@@ -10,16 +10,40 @@
     android:orientation="vertical"
     tools:context=".UserCode.UserMainScreen">
 
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
         android:text="Fresh Music"
         android:textStyle="bold"
         android:padding="10dp"
+        android:layout_alignParentLeft="true"
         android:textColor="@color/white"
         android:background="@color/black"
         android:textSize="22dp"
         />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="2.5dp"
+            android:background="@drawable/buttonbgmain"
+            android:text="Log Out"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"

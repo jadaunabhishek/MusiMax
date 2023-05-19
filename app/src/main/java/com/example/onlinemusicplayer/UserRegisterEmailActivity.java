@@ -13,7 +13,6 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.onlinemusicplayer.UserCode.UserMainScreen;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -23,7 +22,7 @@ import com.google.firebase.auth.UserProfileChangeRequest;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-public class UserRegisterActivity extends AppCompatActivity {
+public class UserRegisterEmailActivity extends AppCompatActivity {
 
     ProgressDialog progressDialog;
     FirebaseAuth mAuth;
@@ -41,7 +40,7 @@ public class UserRegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.user_register);
+        setContentView(R.layout.user_email_register);
 
         // User Register Attributes
         email2 = findViewById(R.id.email1);
@@ -58,7 +57,7 @@ public class UserRegisterActivity extends AppCompatActivity {
         login2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(UserRegisterActivity.this,UserLoginActivity.class));
+                startActivity(new Intent(UserRegisterEmailActivity.this, UserLoginEmailActivity.class));
             }
         });
 
@@ -145,11 +144,11 @@ public class UserRegisterActivity extends AppCompatActivity {
                                             progressDialog.dismiss();
                                             //take user to next activity
                                             sendUserToNextActivity();
-                                            Toast.makeText(UserRegisterActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(UserRegisterEmailActivity.this, "Registration Successful", Toast.LENGTH_SHORT).show();
                                         }
 
                                         else{
-                                            Toast.makeText(UserRegisterActivity.this, "Registration failed! Please try again.", Toast.LENGTH_SHORT).show();
+                                            Toast.makeText(UserRegisterEmailActivity.this, "Registration failed! Please try again.", Toast.LENGTH_SHORT).show();
                                         }
 
                                     }
@@ -159,7 +158,7 @@ public class UserRegisterActivity extends AppCompatActivity {
                             }
                             else {
                                 progressDialog.dismiss();
-                                Toast.makeText(UserRegisterActivity.this, "User not registered, please try again!"+task.getException(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(UserRegisterEmailActivity.this, "User not registered, please try again!"+task.getException(), Toast.LENGTH_SHORT).show();
                             }
                         }
                     });
@@ -173,7 +172,7 @@ public class UserRegisterActivity extends AppCompatActivity {
 
     // User Register Attributes, intent to this new class
     private void sendUserToNextActivity(){
-        Intent intent = new Intent(UserRegisterActivity.this, UserLoginActivity.class);
+        Intent intent = new Intent(UserRegisterEmailActivity.this, UserLoginEmailActivity.class);
         intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

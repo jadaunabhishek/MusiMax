@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="#191414"
     android:layout_height="match_parent"
-    tools:context=".UserLoginActivity">
+    tools:context=".UserLoginEmailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -95,19 +95,21 @@
 
 
         <CheckBox
+            android:id="@+id/remember"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:buttonTint="#ffffff"
             android:theme="@style/CheckBox"
             android:text="Keep me signed in"
             android:textColor="#ffffff"
+            android:checked="true"
              />
 
         <Button
             android:id="@+id/login1"
             android:layout_width="250dp"
             android:layout_height="48dp"
-            android:backgroundTint="#1db954"
+            android:background="@drawable/buttonbgmain"
             android:text="Login"
             android:layout_marginTop="15dp"
             android:layout_marginBottom="5dp"
@@ -129,7 +131,7 @@
                 android:id="@+id/nothing"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Don't have an account ? "
+                android:text="Don't have an account? "
                 android:textColor="#ffffff"
                 android:textSize="18dp" />
 

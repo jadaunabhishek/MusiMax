@@ -5,6 +5,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primary">#3C486B</color>
     <color name="transparent">#00000000</color>
+    <color name="lightblack">#191414</color>
 
     <style name="CheckBox" parent="Theme.AppCompat.NoActionBar">
         <item name="colorControlNormal">#FFFFFF</item>

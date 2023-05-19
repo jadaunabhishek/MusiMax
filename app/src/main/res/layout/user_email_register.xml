@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:background="#191414"
     android:layout_height="match_parent"
-    tools:context=".UserRegisterActivity">
+    tools:context=".UserRegisterEmailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -166,10 +166,10 @@
             android:orientation="vertical">
 
             <Button
-                android:id="@+id/login1"
+                android:id="@+id/register2"
                 android:layout_width="250dp"
                 android:layout_height="48dp"
-                android:backgroundTint="#1db954"
+                android:background="@drawable/buttonbgmain"
                 android:text="Sign up"
                 android:layout_gravity="center"
                 android:layout_marginTop="15dp"

@@ -1,7 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.OnlineMusicPlayer" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Base.Theme.OnlineMusicPlayer" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">#191414</item>
+        <item name="android:navigationBarColor">#191414</item>
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
+
+
+    <style name="Theme.OnlineMusicPlayer" parent="Base.Theme.OnlineMusicPlayer" />
 </resources>
