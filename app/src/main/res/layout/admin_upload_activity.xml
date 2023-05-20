@@ -5,29 +5,36 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
+    android:background="@color/lightblack"
     tools:context=".AdminCode.UploadAlbumActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:id="@+id/linearlayout"
         android:layout_height="wrap_content"
+        android:background="#818288"
         android:orientation="horizontal"
         >
 
         <Button
+            android:id="@+id/buttonChoose"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="CHOOSE"
-            android:background="@drawable/buttonbgmain"
-            android:layout_weight="1"
-            android:id="@+id/buttonChoose"
-            ></Button>
+            android:textSize="15dp"
+            android:backgroundTint="#323030"
+            android:textColor="@color/white"
+            android:padding="15dp"
+            android:onClick="openAudioFiles"
+            android:textAllCaps="false"
+            android:text="Choose Song"/>
 
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:hint="enter a name of album"
             android:id="@+id/edit_text"
+            android:textColorHint="@color/white"
+            android:textColor="@color/white"
             android:layout_weight="4"
             ></EditText>
     </LinearLayout>
@@ -45,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Choose Category:"
-            android:textColor="#E91E63"
+            android:textColor="#EF5449"
             android:textStyle="bold"
             android:layout_weight="1"
             android:layout_marginTop="10dp"
@@ -58,6 +65,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:id="@+id/spinner"
+            android:background="#57575E"
             ></Spinner>
 
         <ImageView

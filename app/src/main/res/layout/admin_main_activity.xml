@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="10dp"
     android:orientation="vertical"
-    android:background="#E8F6EF"
+    android:background="@color/lightblack"
     tools:context=".AdminCode.AdminMainScreen">
 
     <TextView
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:textSize="16dp"
-        android:textColor="#E91E63"
+        android:textColor="#EF5449"
         android:padding="10dp"
         android:textStyle="bold"
         android:text="Choose Category : "
@@ -25,6 +25,7 @@
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:padding="5dp"
+        android:background="#57575E"
         android:layout_height="wrap_content"
         android:minHeight="48dp" />
 
@@ -32,15 +33,19 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="10dp"
-        android:background="#ffffff">
+        android:background="#818288">
 
         <Button
             android:id="@+id/openAudioFiles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="16dp"
+            android:textSize="15dp"
+            android:backgroundTint="#323030"
+            android:textColor="@color/white"
+            android:padding="15dp"
             android:onClick="openAudioFiles"
-            android:text="CHOOSE SONG"/>
+            android:textAllCaps="false"
+            android:text="Choose Song"/>
         
         <TextView
             android:id="@+id/textViewSongsFilesSelected"
@@ -48,6 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:gravity="center"
+            android:textColor="@color/white"
             android:text="No file Selected"/>
 
 
@@ -85,6 +91,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="title"
+            android:textColor="@color/white"
             android:textStyle="bold"
             />
 
@@ -94,11 +101,13 @@
             android:layout_height="wrap_content"
             android:text="album"
             android:textStyle="bold"
+            android:textColor="@color/white"
             />
 
         <TextView
             android:id="@+id/artist"
             android:layout_width="match_parent"
+            android:textColor="@color/white"
             android:layout_height="wrap_content"
             android:text="artist"
             android:textStyle="bold"
@@ -108,6 +117,7 @@
             android:id="@+id/dataa"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="@color/white"
             android:text="dataa"
             android:textStyle="bold"
             />
@@ -118,6 +128,7 @@
             android:layout_height="wrap_content"
             android:text="duration"
             android:textStyle="bold"
+            android:textColor="@color/white"
             />
 
         <ImageView
@@ -135,7 +146,9 @@
         android:layout_marginTop="10dp"
         android:background="@drawable/buttonbgmain"
         android:layout_marginBottom="10dp"
+        android:textSize="18dp"
         android:onClick="openAlbumUploadsActivty"
-        android:text="OPEN UPLOAD ALBUM ACTIVITY"/>
+        android:textAllCaps="false"
+        android:text="Select Name and Album"/>
 
 </LinearLayout>
